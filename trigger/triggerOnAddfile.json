@@ -1,0 +1,24 @@
+{
+	"name": "triggerOnAddfile",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipelineCopydata",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/pocadfolkscontainer/blobs/test",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/0a6283de-ce57-4a59-befa-8155b54b7e0a/resourceGroups/PoC-adfolks/providers/Microsoft.Storage/storageAccounts/pocadfolksstorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

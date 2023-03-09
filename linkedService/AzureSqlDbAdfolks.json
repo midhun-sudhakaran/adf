@@ -1,0 +1,12 @@
+{
+	"name": "AzureSqlDbAdfolks",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=adfolksdbserver.database.windows.net;initial catalog=AdfolksSource;user id=adfolksdbserver",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDkyRjI5N0Y0LUM3MzQtNDE0NC05QjY0LTQyQjg0MUFGOUFCQl82OWZlZjAyNC1iZmY5LTRiY2QtYTZiYy0zOWMxZjU2YmNiYTciDQp9"
+		}
+	}
+}

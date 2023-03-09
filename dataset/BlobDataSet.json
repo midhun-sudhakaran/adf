@@ -1,0 +1,18 @@
+{
+	"name": "BlobDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStoragePOCAdfolks",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "pocadfolkscontainer"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
